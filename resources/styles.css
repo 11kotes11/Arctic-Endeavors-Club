@@ -1,0 +1,175 @@
+/*Global*/
+html, body {
+    padding: 0px;
+    margin: 0px;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+body {
+    background-color: #2DE2EB;
+}
+
+/*Navigation*/
+nav {
+    background-image: url("./Backsplash.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: -41rem;
+    z-index: 1;
+}
+
+.nav {
+    background-color: rgba(46, 59, 59, 0.596);
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    align-items: center;
+}
+
+nav h1 {
+    margin: 0px;
+    color: #75E8EE;
+    text-align: center;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+.hamburger {
+    width: 5rem;
+    height: 5rem;
+    margin-right: 2%;
+}
+
+.hamburger:hover {
+    opacity: 70%;
+}
+
+@media only screen and (max-width: 1024px){
+    nav h1 {
+        font-size: 5rem;
+    }
+}
+
+/*Body*/
+
+img {
+    width: 80%;
+}
+
+.photos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.photos h1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0px;
+    color: #34686B;
+}
+
+.grid {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(auto, 20rem);
+    width: 90%;
+  }
+
+.box {
+    border: 2px solid #14676B;
+    border-radius: 1rem;
+}
+
+.box:hover {
+    opacity: 70%;
+}
+
+.one {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    background-image: url("./bear.jpg");
+    background-size: cover;
+}
+
+.two {
+    grid-column: 3;
+    grid-row: 1 ;
+    background-image: url("./Iceberg.jpg");
+    background-size: cover;
+}
+
+.three {
+    grid-column: 4;
+    grid-row: 1;
+    background-image: url("./owl.jpg");
+    background-size: cover;
+}
+
+.four {
+    grid-column: 3;
+    grid-row: 2;
+    background-image: url("./fox.jpg");
+    background-size: cover;
+}
+
+.five {
+    grid-column: 4;
+    grid-row: 2 / 4;
+    background-image: url("./Snow-Dunes.jpg");
+    background-size: cover;
+}
+
+.six {
+    grid-column: 1;
+    grid-row: 3;
+    background-image: url("./sky.jpg");
+    background-size: cover;
+}
+
+.seven {
+    grid-column: 2 / 4;
+    grid-row: 3;
+    background-image: url("./ice.jpg");
+    background-size: cover;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 426px){
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .three {
+        grid-column: 3;
+        grid-row: 2;
+    }
+    .four {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .five {
+        grid-column: 3;
+        grid-row: 3 / 5;
+    }
+    .six {
+        grid-column: 2;
+        grid-row: 3;
+    }
+    .seven {
+        grid-column: 1 / 3;
+        grid-row: 4;
+    }
+}
