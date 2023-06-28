@@ -8,6 +8,10 @@ h1 {
     font-size: 6rem;
 }
 
+h2 {
+    font-size: 4rem;
+}
+
 body {
     background-color: #2DE2EB;
 }
@@ -51,7 +55,14 @@ nav h1 {
 }
 
 /*Body*/
+section h1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0px;
+    color: #34686B;
+}
 
+    /*Photos*/
 img {
     width: 80%;
 }
@@ -60,13 +71,7 @@ img {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-}
-
-.photos h1 {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 0px;
-    color: #34686B;
+    background-color: #2DE2EB;
 }
 
 .grid {
@@ -82,10 +87,6 @@ img {
 .box {
     border: 2px solid #14676B;
     border-radius: 1rem;
-}
-
-.box:hover {
-    opacity: 70%;
 }
 
 .one {
@@ -182,4 +183,35 @@ img {
         grid-column: 1;
         grid-row: 7;
     }
+}
+
+    /*Trips*/
+.trip {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #75E8EE;
+}
+
+.map {
+    grid-column: 1 / 5;
+    grid-row: 1 / 5;
+    background-image: url("./map.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.date {
+    color:#34686B;
+    text-align: center;
+    grid-column: 1 / 5;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 426px){
+    .map {
+        grid-column: 1; 
+        grid-row: 1;
+    } 
 }
